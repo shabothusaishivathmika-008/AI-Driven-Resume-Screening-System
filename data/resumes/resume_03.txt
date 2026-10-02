@@ -1,0 +1,5 @@
+Candidate ID: C003
+Name: Arjun Kumar
+Skills: Python, SQL, Git
+Experience: 2
+Education: BTech

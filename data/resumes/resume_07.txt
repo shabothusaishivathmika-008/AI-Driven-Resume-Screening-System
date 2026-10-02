@@ -1,0 +1,5 @@
+Candidate ID: C007
+Name: Karthik Reddy
+Skills: Python, Git, Data Structures
+Experience: 3
+Education: BTech

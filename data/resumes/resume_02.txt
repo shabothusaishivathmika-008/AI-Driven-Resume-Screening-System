@@ -1,0 +1,5 @@
+Candidate ID: C002
+Name: Ananya Reddy
+Skills: Java, SQL, Git, Data Structures
+Experience: 3
+Education: BTech

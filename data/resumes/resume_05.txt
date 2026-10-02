@@ -1,0 +1,5 @@
+Candidate ID: C005
+Name: Vikram Singh
+Skills: Java, Python, SQL, Git, Data Structures
+Experience: 6
+Education: BTech

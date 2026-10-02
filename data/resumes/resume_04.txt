@@ -1,0 +1,5 @@
+Candidate ID: C004
+Name: Sneha Rao
+Skills: Java, Python, Data Structures
+Experience: 5
+Education: BTech

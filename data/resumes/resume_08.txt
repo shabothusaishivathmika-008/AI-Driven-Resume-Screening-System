@@ -1,0 +1,5 @@
+Candidate ID: C008
+Name: Meera Patel
+Skills: Java, Python, SQL, Git
+Experience: 2
+Education: BTech

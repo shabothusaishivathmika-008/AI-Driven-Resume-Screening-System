@@ -1,0 +1,4 @@
+Role: Software Engineer
+Required Skills: Java, Python, SQL, Git, Data Structures
+Minimum Experience: 2
+Education Required: BTech

@@ -1,0 +1,5 @@
+Candidate ID: C006
+Name: Priya Mehta
+Skills: Java, SQL
+Experience: 1
+Education: BTech

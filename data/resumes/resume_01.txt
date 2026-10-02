@@ -1,0 +1,5 @@
+Candidate ID: C001
+Name: Rahul Sharma
+Skills: Java, Python, SQL, Git, Data Structures
+Experience: 4
+Education: BTech
