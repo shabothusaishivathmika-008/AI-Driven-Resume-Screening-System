@@ -1,0 +1,594 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   NAVIGATION BAR
+================================ */
+
+.navbar {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    width: 86%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+    padding: 55px 0;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.small-title {
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #6366f1;
+
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    color: #6b7280;
+
+    font-size: 17px;
+
+    max-width: 650px;
+}
+
+
+/* ================================
+   DASHBOARD
+================================ */
+
+.dashboard {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.card-header h2 {
+    font-size: 20px;
+}
+
+
+/* ================================
+   JOB DESCRIPTION
+================================ */
+
+.badge {
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.job-role {
+    font-size: 27px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 13px;
+
+    color: #6b7280;
+
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.skills span {
+    background: #f3f4f6;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.job-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.job-details div {
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    padding: 13px;
+}
+
+.job-details strong {
+    display: block;
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+    margin-bottom: 3px;
+}
+
+.job-details span {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   SCREENING SUMMARY
+================================ */
+
+.summary-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.summary-item {
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.summary-number {
+    display: block;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #4f46e5;
+}
+
+.summary-label {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+.primary-button {
+    width: 100%;
+
+    border: none;
+
+    background: #4f46e5;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    background: #4338ca;
+
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   RESULTS SECTION
+================================ */
+
+.results-card {
+    margin-bottom: 45px;
+}
+
+.results-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.results-header h2 {
+    font-size: 25px;
+}
+
+.result-status {
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.empty-state {
+    text-align: center;
+
+    padding: 55px 20px;
+
+    border: 2px dashed #e5e7eb;
+
+    border-radius: 12px;
+
+    color: #6b7280;
+}
+
+.empty-icon {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.empty-state h3 {
+    color: #374151;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================================
+   CANDIDATE RESULTS
+================================ */
+
+.candidate-results {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.candidate-row {
+    display: grid;
+
+    grid-template-columns: 55px 1.5fr 1fr 120px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    transition: 0.2s;
+}
+
+.candidate-row:hover {
+    border-color: #c7d2fe;
+
+    background: #fafaff;
+}
+
+.rank {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #4f46e5;
+}
+
+.candidate-name {
+    font-weight: 700;
+
+    font-size: 15px;
+}
+
+.candidate-id {
+    display: block;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+.candidate-skills {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+.score {
+    text-align: right;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* ================================
+   SCORING SECTION
+================================ */
+
+.scoring-section {
+    margin-top: 20px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+}
+
+.score-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.score-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.score-number {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #4f46e5;
+
+    margin-bottom: 8px;
+}
+
+.score-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.score-card p {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #111827;
+
+    color: #d1d5db;
+
+    text-align: center;
+
+    padding: 28px;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .score-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .score-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .job-details {
+        grid-template-columns: 1fr;
+    }
+
+    .candidate-row {
+        grid-template-columns:
+            40px 1fr;
+
+    }
+
+    .candidate-skills {
+        display: none;
+    }
+
+    .score {
+        text-align: left;
+    }
+
+}

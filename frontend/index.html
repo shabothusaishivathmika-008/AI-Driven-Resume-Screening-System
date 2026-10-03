@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Resume Screening System
+    </title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         NAVIGATION BAR
+    ================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            AI Resume Screening
+        </div>
+
+        <div class="nav-status">
+
+            <span class="status-dot"></span>
+
+            System Ready
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main class="container">
+
+
+        <!-- =================================
+             HERO SECTION
+        ================================== -->
+
+        <section class="hero">
+
+            <p class="small-title">
+                INTELLIGENT RECRUITMENT SYSTEM
+            </p>
+
+            <h1>
+                AI-Driven Resume Screening System
+            </h1>
+
+            <p class="subtitle">
+
+                Automatically analyze, score and rank
+                candidates against a job description.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             DASHBOARD
+        ================================== -->
+
+        <section class="dashboard">
+
+
+            <!-- =================================
+                 JOB DESCRIPTION CARD
+            ================================== -->
+
+            <div class="card job-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Job Description
+                    </h2>
+
+                    <span class="badge">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="job-role">
+
+                    Software Engineer
+
+                </div>
+
+
+                <p class="label">
+
+                    Required Skills
+
+                </p>
+
+
+                <div class="skills">
+
+                    <span>
+                        Java
+                    </span>
+
+                    <span>
+                        Python
+                    </span>
+
+                    <span>
+                        SQL
+                    </span>
+
+                    <span>
+                        Git
+                    </span>
+
+                    <span>
+                        Data Structures
+                    </span>
+
+                </div>
+
+
+                <div class="job-details">
+
+
+                    <div>
+
+                        <strong>
+                            Minimum Experience
+                        </strong>
+
+                        <span>
+                            2 years
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Education
+                        </strong>
+
+                        <span>
+                            BTech
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SCREENING SUMMARY CARD
+            ================================== -->
+
+            <div class="card summary-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Screening Summary
+                    </h2>
+
+                </div>
+
+
+                <div class="summary-grid">
+
+
+                    <div class="summary-item">
+
+                        <span class="summary-number">
+                            8
+                        </span>
+
+                        <span class="summary-label">
+                            Resumes
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span class="summary-number">
+                            8
+                        </span>
+
+                        <span class="summary-label">
+                            Candidates
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    id="screenButton"
+                    class="primary-button">
+
+                    Screen Resumes
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             SCREENING RESULTS
+        ================================== -->
+
+        <section class="card results-card">
+
+
+            <div class="results-header">
+
+
+                <div>
+
+                    <p class="small-title">
+                        SCREENING RESULTS
+                    </p>
+
+                    <h2>
+                        Ranked Candidates
+                    </h2>
+
+                </div>
+
+
+                <span
+                    id="resultStatus"
+                    class="result-status">
+
+                    Waiting for screening
+
+                </span>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 CANDIDATE RESULTS
+            ================================== -->
+
+            <div
+                id="candidateResults"
+                class="candidate-results">
+
+
+                <!-- Initial Empty State -->
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        📄
+                    </div>
+
+                    <h3>
+                        No results yet
+                    </h3>
+
+                    <p>
+
+                        Click "Screen Resumes"
+                        to analyze the available
+                        candidates.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 CANDIDATE PROFILE
+            ================================== -->
+
+            <div
+                id="candidateProfile"
+                class="candidate-profile hidden">
+
+
+                <!-- Profile Header -->
+
+                <div class="profile-header">
+
+
+                    <div>
+
+                        <p class="small-title">
+                            CANDIDATE PROFILE
+                        </p>
+
+
+                        <h2 id="profileName">
+                            Candidate Name
+                        </h2>
+
+
+                        <span
+                            id="profileId"
+                            class="candidate-id">
+
+                            C000
+
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        id="closeProfile"
+                        class="close-button">
+
+                        ✕
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     BASIC DETAILS
+                ================================== -->
+
+                <div class="profile-details">
+
+
+                    <div class="profile-info">
+
+                        <span>
+                            Experience
+                        </span>
+
+                        <strong
+                            id="profileExperience">
+
+                            -
+
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="profile-info">
+
+                        <span>
+                            Education
+                        </span>
+
+                        <strong
+                            id="profileEducation">
+
+                            -
+
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     SKILLS
+                ================================== -->
+
+                <div class="profile-section">
+
+
+                    <h3>
+                        Skills
+                    </h3>
+
+
+                    <div
+                        id="profileSkills"
+                        class="profile-skills">
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     SCORING BREAKDOWN
+                ================================== -->
+
+                <div class="profile-section">
+
+
+                    <h3>
+                        Scoring Breakdown
+                    </h3>
+
+
+                    <div class="score-breakdown">
+
+
+                        <!-- Cosine Similarity -->
+
+                        <div class="breakdown-item">
+
+                            <span>
+                                Cosine Similarity
+                            </span>
+
+                            <strong
+                                id="profileCosine">
+
+                                0
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- Skill Score -->
+
+                        <div class="breakdown-item">
+
+                            <span>
+                                Skill Score
+                            </span>
+
+                            <strong
+                                id="profileSkillScore">
+
+                                0
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- Experience Score -->
+
+                        <div class="breakdown-item">
+
+                            <span>
+                                Experience Score
+                            </span>
+
+                            <strong
+                                id="profileExperienceScore">
+
+                                0
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- Education Score -->
+
+                        <div class="breakdown-item">
+
+                            <span>
+                                Education Score
+                            </span>
+
+                            <strong
+                                id="profileEducationScore">
+
+                                0
+
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================
+                     TOTAL SCORE
+                ================================== -->
+
+                <div class="total-score">
+
+
+                    <span>
+                        Overall Screening Score
+                    </span>
+
+
+                    <strong
+                        id="profileTotalScore">
+
+                        0
+
+                    </strong>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             SCORING ENGINE
+        ================================== -->
+
+        <section class="scoring-section">
+
+
+            <div class="section-heading">
+
+
+                <p class="small-title">
+                    SCORING ENGINE
+                </p>
+
+
+                <h2>
+                    How Candidates Are Scored
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="score-cards">
+
+
+                <!-- Cosine Similarity -->
+
+                <div class="score-card">
+
+
+                    <div class="score-number">
+                        30
+                    </div>
+
+
+                    <h3>
+                        Cosine Similarity
+                    </h3>
+
+
+                    <p>
+
+                        Measures similarity between
+                        the job description and
+                        resume text.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- Skill Score -->
+
+                <div class="score-card">
+
+
+                    <div class="score-number">
+                        50
+                    </div>
+
+
+                    <h3>
+                        Skill Score
+                    </h3>
+
+
+                    <p>
+
+                        Awards points for matching
+                        required skills.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- Experience -->
+
+                <div class="score-card">
+
+
+                    <div class="score-number">
+                        30
+                    </div>
+
+
+                    <h3>
+                        Experience
+                    </h3>
+
+
+                    <p>
+
+                        Evaluates candidate experience
+                        against the requirement.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- Education -->
+
+                <div class="score-card">
+
+
+                    <div class="score-number">
+                        20
+                    </div>
+
+
+                    <h3>
+                        Education
+                    </h3>
+
+
+                    <p>
+
+                        Awards points when the
+                        education requirement matches.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+
+        <p>
+            AI-Driven Resume Screening System
+        </p>
+
+
+        <p>
+
+            Java • TF-IDF • Cosine Similarity •
+            Rule-Based Scoring
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
